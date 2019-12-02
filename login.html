@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>J210 シートゥーピョー</title>
+<script src="js/login.js"></script>
+</head>
+
+   <header>
+    <h1>ログイン</h1>
+    <link rel="stylesheet" href="css/form.css" />
+    <title>J210 シートゥーピョー</title>
+</header>
+<body>
+<p>
+	
+	<input type ="button" onclick="location.href='regist.html'" value="新規登録">
+	<input type ="button" onclick="history.back()" value="戻る">
+</p>
+<br>
+
+</br>
+<form>
+   <div id="roll">
+    <p>
+    <label><span>出席番号:</span>
+    <input type ="text" name ="name"
+    pattern="[A-Z]{1}[0-9]{3}" maxlength= "4" required>
+    </label>
+    </p>
+    </div>
+    
+    <div id="pass">
+    <p>
+    <label><span>パスワード:</span>
+        <input type = "password" name = "password" maxlength="20" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,20}" title="半角英数字で入力してください" required></label>
+    </p>
+    </div>
+    
+    <p>
+    <input id ="submit" type ="submit" value="submit">
+        <input id = "reset" type="reset" value="reset">
+           </p>
+    
+</form>
+	</body>
+	
+</html>
